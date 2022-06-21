@@ -70,6 +70,12 @@ for(let b = 0; b < Box.length; b++){
         pre2[0].style.opacity = '1';
         pre2[0].style.visibility = 'visible';
 
+        for(let r=0; r < re.length; r++){
+          re[r].addEventListener('click', ()=>{
+            location.reload();
+          })
+        }
+
       }
 
       if(Box[b].style.backgroundColor != master){
@@ -81,7 +87,7 @@ for(let b = 0; b < Box.length; b++){
   
         chances = 0;
 
-        let re = document.getElementsByClassName('relaod');
+        // let re = document.getElementsByClassName('relaod');
 
         pre[0].style.opacity = '1';
         pre[0].style.visibility = 'visible';
@@ -103,5 +109,5 @@ for(let b = 0; b < Box.length; b++){
 master = `${'rgb'}${'(' + color + ')'}`;
 
 ShowRGBColor[0].innerText = master;
-  
+
 
